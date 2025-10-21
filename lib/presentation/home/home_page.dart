@@ -1,5 +1,4 @@
-import 'package:calculix/core/shared_widgets/principal_rectangular_button.dart';
-import 'package:calculix/presentation/auth/auth_notifier.dart';
+import 'package:calculix/core/shared_widgets/buttons/principal_rectangular_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -15,7 +14,6 @@ class _HomePageState extends ConsumerState<HomePage> {
   @override
   Widget build(BuildContext context) {
 
-    final user = ref.read(authNotifierProvider).user!;
 
     return Scaffold(
       body: principalRectangularButton(onPressed: () {

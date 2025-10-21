@@ -6,8 +6,9 @@ class AuthState {
   final AuthStatus status;
   final UserEntity? user;
   final String? errorMessage;
+  final String? token;
 
-  AuthState({required this.status, this.user, this.errorMessage});
+  AuthState({required this.status, this.user, this.errorMessage,this.token});
 
   factory AuthState.initial() => AuthState(status: AuthStatus.initial);
 
@@ -15,9 +16,11 @@ class AuthState {
     AuthStatus? status,
     UserEntity? user,
     String? errorMessage,
+    String? token,
   }) {
     return AuthState(
       status: status ?? this.status,
+      token: errorMessage ?? this.token,
       user: user ?? this.user,
       errorMessage: status == AuthStatus.error ? errorMessage : null,
     );

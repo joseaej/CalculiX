@@ -1,6 +1,6 @@
 import 'package:calculix/core/config/app_colors.dart';
+import 'package:calculix/core/shared_widgets/buttons/principal_rectangular_button.dart';
 import 'package:calculix/core/shared_widgets/linear_divider.dart';
-import 'package:calculix/core/shared_widgets/principal_rectangular_button.dart';
 import 'package:calculix/core/shared_widgets/rectangular_text_form_field.dart';
 import 'package:calculix/core/shared_widgets/wave_clipper.dart';
 import 'package:calculix/data/models/auth_state.dart';
